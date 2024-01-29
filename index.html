@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="QuickChat - Send messages instantly without saving contacts!" property="og:title">
+  <meta content="https://example.com/QuickChat" property="og:url">
+  <meta content="Send messages without saving contacts on your phone!" property="og:description">
+  <meta content="https://www.example.com/hub/wp-content/uploads/2023/09/How-to-send-WhatsApp-message-without-saving-number.png" property="og:image" />
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title>QuickChat | Shiva :)</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" onclick="showSection('whatsapp')" id="whatsappBtn" class="active">WhatsApp</a>
+    <a href="#" onclick="showSection('telegram')" id="telegramBtn">Telegram</a>
+    <a href="#" onclick="showSection('instagram')" id="instagramBtn">Instagram</a>
+  </nav>
+
+  <section id="whatsapp" class="active">
+    <h2>WhatsApp</h2>
+    <form>
+      <label for="countryCode">Select Country Code:</label>
+      <select id="countryCodeWa" name="countryCodeWa">
+        <option value="+91" selected>+91 (India)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+7">+7 (Russia)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+39">+39 (Italy)</option>
+        <option value="+82">+82 (South Korea)</option>
+        <option value="+34">+34 (Spain)</option>
+        <!-- Add more country codes as needed -->
+      </select>
+      <br>
+      <label for="phoneNumberWa">Phone Number:</label>
+      <input type="text" id="phoneNumberWa" name="phoneNumberWa">
+      <br>
+      <button type="button" onclick="waMsg('https://wa.me/')">Start Chat in WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="telegram">
+    <h2>Telegram</h2>
+    <form>
+      <label for="countryCode">Select Country Code:</label>
+      <select id="countryCodeTg" name="countryCodeTg">
+        <option value="+91" selected>+91 (India)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+7">+7 (Russia)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+39">+39 (Italy)</option>
+        <option value="+82">+82 (South Korea)</option>
+        <option value="+34">+34 (Spain)</option>
+        <!-- Add more country codes as needed -->
+      </select>
+      <br>
+      <label for="tgNumber">Phone Number:</label>
+      <input type="text" id="tgNumber" name="tgNumber">
+      <br>
+      <button type="button" onclick="tMsg('https://t.me/')">Start Chat in Telegram</button>
+    </form>
+  </section>
+
+  <section id="instagram">
+    <h2>Instagram</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Instagram username">
+      <br>
+      <button class="bt" type="button" onclick="iMsg('https://ig.me/m/')">Start Chat in Instagram</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Created by Shiva :)</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
