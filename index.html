@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="QuickChat - Send messages instantly without saving contacts!" property="og:title">
-  <meta content="https://example.com/QuickChat" property="og:url">
+  <meta content="https://thebrainliestuser.github.io/QuickChat/#" property="og:url">
   <meta content="Send messages without saving contacts on your phone!" property="og:description">
-  <meta content="https://raw.githubusercontent.com/TheBrainliestUser/QuickChat/main/assets/preview.png" property="og:image" />
+  <meta content="https://s3.filebin.net/filebin/284877902a06702c6eb21424f3fe4762736fe7b4bc55c580a131297720ddeacd/c0fefe63d6aa925cb9a2a06088c404202a34bc4e4457b9fff7253ccdb58d3d82?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7pMj6hGeoKewqmMQILjm%2F20240129%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240129T122400Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D300&response-content-disposition=filename%3D%22images__14_.jpeg%22&response-content-type=image%2Fjpeg&X-Amz-Signature=6d13533e42706e82bcee10069b9e47de73676dfd586126ea596d951b89ef1b17" property="og:image" />
   <link rel="icon" type="image/png" href="assets/icon.png">
   <link rel="stylesheet" href="assets/style.css">
 
@@ -18,11 +18,11 @@
 
   <nav>
     <a href="#" onclick="showSection('whatsapp')" id="whatsappBtn" class="active">WhatsApp</a>
-    <a href="#" onclick="showSection('telegram')" id="telegramBtn">Telegram</a>
     <a href="#" onclick="showSection('instagram')" id="instagramBtn">Instagram</a>
+    <a href="#" onclick="showSection('telegram')" id="telegramBtn">Telegram</a>
   </nav>
 
-  <section id="whatsapp" class="active">
+  <section id="whatsapp">
     <h2>WhatsApp</h2>
     <form>
       <label for="countryCode">Select Country Code:</label>
@@ -49,6 +49,17 @@
     </form>
   </section>
 
+  <section id="instagram" class="active">
+    <h2>Instagram</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="user>
+      <br>
+      <button type="button" onclick="iMsg('https:>
+    </form>
+  </section>
+
+
   <section id="telegram">
     <h2>Telegram</h2>
     <form>
@@ -73,16 +84,6 @@
       <input type="text" id="tgNumber" name="tgNumber">
       <br>
       <button type="button" onclick="tMsg('https://t.me/')">Start Chat in Telegram</button>
-    </form>
-  </section>
-
-  <section id="instagram">
-    <h2>Instagram</h2>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Enter Instagram username">
-      <br>
-      <button class="bt" type="button" onclick="iMsg('https://ig.me/m/')">Start Chat in Instagram</button>
     </form>
   </section>
 
