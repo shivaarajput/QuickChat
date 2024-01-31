@@ -14,16 +14,16 @@ function showSection(sectionId) {
 function waMsg(link) {
   var cd = document.getElementById('countryCodeWa').value;
   var ph = document.getElementById('phoneNumberWa').value;
-  location.href = link + cd + ph;
+  window.open(link + cd + ph, "_blank");
 }
 
 function tMsg(link) {
   var cd = document.getElementById('countryCodeTg').value;
   var ph = document.getElementById('tgNumber').value;
-  location.href = link + cd + ph;
+  window.open(link + cd + ph, "_blank");
 }
 
 function iMsg(link) {
   var uname = document.getElementById('username').value;
-  location.href = link + uname;
+  window.open(link + uname, "_blank");
 }
