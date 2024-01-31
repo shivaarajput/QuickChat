@@ -14,16 +14,22 @@ function showSection(sectionId) {
 function waMsg(link) {
   var cd = document.getElementById('countryCodeWa').value;
   var ph = document.getElementById('phoneNumberWa').value;
-  window.open(link + cd + ph, "_blank");
+  if (ph.trim() !== '') {
+    window.open(link + cd + ph, "_blank");
+  }
 }
 
 function tMsg(link) {
   var cd = document.getElementById('countryCodeTg').value;
   var ph = document.getElementById('tgNumber').value;
-  window.open(link + cd + ph, "_blank");
+  if (ph.trim() !== '') {
+    window.open(link + cd + ph, "_blank");
+  }
 }
 
 function iMsg(link) {
   var uname = document.getElementById('username').value;
-  window.open(link + uname, "_blank");
+  if (uname.trim() !== '') {
+    window.open(link + uname, "_blank");
+  }
 }
